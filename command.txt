@@ -1,0 +1,4 @@
+PS D:\Project\Html\gitTester> git add .
+PS D:\Project\Html\gitTester> git commit -m "first commit"
+PS D:\Project\Html\gitTester> git remote add origin https://github.com/dozos/getTested.git
+PS D:\Project\Html\gitTester> git push -u origin  
