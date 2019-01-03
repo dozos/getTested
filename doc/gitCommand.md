@@ -67,3 +67,19 @@
 **СТРОКА СТАТУСА.**                       |
 "master"                                  | Текущая ветка в репозитории
 "О хх(стрелка вверх) yy(стрелка вниз)"    | nn - количество комитов которы нужно забрать из облачного репозитория<br>yy - количество комитов которые нужно выгрузить в облачный репозиторий<br>При нажатии: Фиксация в ветке "origin/master" загружает и выгружает комиты.<br>> git pull --tags origin master<br>From https://github.com/dozos/getTested<br> * branch            master     -> FETCH_HEAD<br>> git push origin master:master<br>> git show :doc/gitCommand.md<br>To https://github.com/dozos/getTested.git<br>   2bfcdd1..9a444ca  master -> master<br>> git status -z -u<br>> git symbolic-ref --short HEAD<br>> git rev-parse master<br>> git rev-parse --symbolic-full-name master@{u}<br>> git rev-list --left-right master...refs/remotes/origin/master<br>> git for-each-ref --format %(refname) %(objectname) --sort -committerdate<br>> git remote --verbose<br>> git show :doc/gitCommand.md
+
+
+## Пользовательские алиасы ##
+
+_файл: c:\Users\Dozos\.gitconfig_
+
+Добавить секцию
+
+    [alias]
+        s = status --short
+        st = status
+        l = log --oneline --graph --decorate --all
+        g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
+        br = branch
+        co = checkout
+        
