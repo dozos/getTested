@@ -28,7 +28,8 @@
 
 Назначение | Команда
 -----------|--------
-"Галочка"  | **git add** "_index.html_"<br>**git commit -m** "_first commit_"
+"Галочка"  | **Работа с локальным репозиторием**<br>**git add** "_index.html_"<br>**git commit -m** "_first commit_"<br>------------------<br>**--> Показать вывод команд git **<br>git add -A -- .<br>git commit --quiet --allow-empty-message --file - --all<br>git status -z -u<br>git symbolic-ref --short HEAD<br>git rev-parse master<br>git rev-parse --symbolic-full-name master@{u}<br>git rev-list --left-right master...refs/remotes/origin/master<br>git for-each-ref --format %(refname) %(objectname) --sort -committerdate<br>git remote --verbose<br>git show :doc/gitCommand.md<br>
+------------------                                                | 
 "Синхронизировать"                                                | **_**
 ================================================================= | ============
 "Дополнительные действия\Загрузить с..."                          | **_**
