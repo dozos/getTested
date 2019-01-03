@@ -6,6 +6,7 @@
 -----------|--------
 Создать репозиторий | PS D:\Project\Html\gitTester> **git init**
 Добавить к репозиторию все файлы в каталоге | PS D:\Project\Html\gitTester> **git add .**
+Добавить к репозиторию один файл | PS D:\Project\Html\gitTester> **git add** "_index.html_"
 Сохранить файлы в репозитории с коментариями | PS D:\Project\Html\gitTester> **git commit -m** "_first commit_"
 
 
